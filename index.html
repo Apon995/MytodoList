@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Todo List</title>
+  <!-- --tailwind-css-cdn-- -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- --google-fonts-- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Noto Sans JP', 'Inter'" class='h-screen bg-red-200 scroll-smooth'>
+  <section class="flex items-center justify-center min-h-full">
+    <div class="shadow-lg xl:w-[30%] md:w-[55%] lg:w-[50%] w-[95%] rounded-lg bg-white py-5 px-2 md:px-5 space-y-5">
+
+      <div class="flex items-center ">
+        <h1 class="text-xl text-black font-semibold">My todo List</h1>
+        <img src="./assets/Notebook.png" alt="" class="w-12 ">
+      </div>
+
+      <div class="w-full border-[2px] border-gray-600 h-12 rounded-lg inline-flex">
+        <input id="todo" type="text" placeholder="Add todo"
+          class=" text-base font-medium text-black rounded-l-lg bg-none w-[75%] h-full outline-none border-none placeholder:text-gray-600 px-2">
+        <button onclick="Addtodo()"
+          class="bg-red-600 h-full w-[25%] cursor-pointer hover:opacity-90 rounded-r-[4px] text-white font-medium bg-gradient-to-r from-[#c23db9] to-[#6074f8]">Add</button>
+      </div>
+      <div class="py-4">
+        <ul id="todolist" class="text-base list-inside list-[number] text-black space-y-3 font-semibold">
+        </ul>
+      </div>
+
+
+
+
+    </div>
+
+
+  </section>
+
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
